@@ -1,0 +1,14 @@
+.chores {
+    font-family: "Courier New";
+    color:rgb(12, 116, 116);
+    font-weight: bold;
+}    
+
+h3 {
+    text-decoration: underline;
+}
+
+li {
+    font-style: italic;
+}
+
