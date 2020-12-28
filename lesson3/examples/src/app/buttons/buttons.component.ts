@@ -10,7 +10,8 @@ export class ButtonsComponent implements OnInit {
    inactive: boolean = false;
    buttonState: boolean[] = [true, true, true];
    location: string = 'center';
-
+   jokeHeading: string = "Joke Buttons"
+   
    constructor() { }
 
    ngOnInit() { }
@@ -22,5 +23,11 @@ export class ButtonsComponent implements OnInit {
       return this.buttonState;
    }
 
+   shiftLocation(oldLocation: string) {
+      while (this.location === oldLocation) {
+         this.location = ['left', 'right', 'center'][Math.floor(Math.random()*3)];
+      }
+      return this.location;
+   }
    
 }
