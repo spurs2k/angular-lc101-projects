@@ -15,7 +15,7 @@ export class AppComponent {
   takeOffEnabled: boolean = true;
 
   sideCheck(width, height) {
-    if (width > 260000 || width < 0 || height < 0 || height > 340000) {
+    if (width >= 260000 || width < -10000 || height === 0 || height === 340000) {
       this.color = 'orange';
     } else {
       this.color = 'blue';
